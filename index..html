@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亿航智能 EH216-S 全方位调研与分析</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; line-height: 1.8; color: #2c3e50; background: #f5f7fa; }
+        header { background: linear-gradient(135deg, #1a2a6c, #2a5298); color: #fff; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 2.2em; margin-bottom: 10px; }
+        header p { opacity: 0.85; font-size: 1.05em; }
+        nav { background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        nav ul { display: flex; flex-wrap: wrap; justify-content: center; list-style: none; padding: 12px; }
+        nav li a { display: block; padding: 8px 16px; color: #2a5298; text-decoration: none; font-size: 0.95em; border-radius: 4px; }
+        nav li a:hover { background: #eaf1fb; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 30px 20px; }
+        section { background: #fff; border-radius: 10px; padding: 30px; margin-bottom: 25px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        h2 { color: #1a2a6c; border-left: 5px solid #2a5298; padding-left: 12px; margin-bottom: 20px; font-size: 1.5em; }
+        h3 { color: #2a5298; margin: 20px 0 10px; font-size: 1.2em; }
+        p { margin-bottom: 12px; }
+        ul, ol { margin: 10px 0 15px 25px; }
+        li { margin-bottom: 6px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #dde3ec; padding: 10px 12px; text-align: left; font-size: 0.95em; }
+        th { background: #eaf1fb; color: #1a2a6c; }
+        tr:nth-child(even) { background: #f9fbfd; }
+        .highlight { background: #fff8e6; border-left: 4px solid #f0ad4e; padding: 15px; border-radius: 4px; margin: 15px 0; }
+        .tag { display: inline-block; background: #eaf1fb; color: #2a5298; padding: 3px 10px; border-radius: 12px; font-size: 0.85em; margin: 2px; }
+        footer { background: #1a2a6c; color: #fff; text-align: center; padding: 25px; font-size: 0.9em; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin: 15px 0; }
+        .card { background: #f9fbfd; border: 1px solid #e3e9f2; border-radius: 8px; padding: 18px; }
+        .card h4 { color: #2a5298; margin-bottom: 8px; font-size: 1em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>亿航智能 EH216-S 全方位调研与分析</h1>
+    <p>飞行汽车技术基础 · 课程作业 1</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#overview">概述</a></li>
+        <li><a href="#tech">技术可行性</a></li>
+        <li><a href="#scene">应用场景</a></li>
+        <li><a href="#market">市场可行性</a></li>
+        <li><a href="#risk">风险与挑战</a></li>
+        <li><a href="#conclusion">结论</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+<section id="overview">
+    <h2>一、产品概述</h2>
+    <p><strong>EH216-S</strong> 是亿航智能（EHang）自主研发的<strong>双座无人驾驶电动垂直起降飞行器（eVTOL）</strong>，采用同轴反转双桨设计，是全球首款同时获得中国民航局（CAAC）型号合格证（TC）、生产许可证（PC）、标准适航证（AC）、运营合格证（OC）四证齐全，并获得欧洲航空安全局（EASA）接受适航审查的载人级自动驾驶飞行器。</p>
+
+    <h3>核心参数</h3>
+    <table>
+        <tr><th>参数项</th><th>指标</th></tr>
+        <tr><td>最大起飞重量</td><td>650 kg</td></tr>
+        <tr><td>最大有效载荷</td><td>220 kg（2名乘客）</td></tr>
+        <tr><td>最大航程</td><td>约 30 km</td></tr>
+        <tr><td>最大飞行速度</td><td>130 km/h</td></tr>
+        <tr><td>续航时间</td><td>约 25 分钟</td></tr>
+        <tr><td>动力配置</td><td>8 支机臂 x 2 组同轴反转螺旋桨（共16桨）</td></tr>
+        <tr><td>电池系统</td><td>分布式智能电池组，支持快速换电</td></tr>
+        <tr><td>控制方式</td><td>全自主飞行 + 地面指挥调度中心远程监控</td></tr>
+        <tr><td>起降方式</td><td>垂直起降（VTOL），无需跑道</td></tr>
+    </table>
+
+    <h3>技术路线定位</h3>
+    <div class="grid">
+        <div class="card">
+            <h4>多旋翼构型</h4>
+            <p>结构简单、控制成熟、悬停稳定，适合城市低空短途场景</p>
+        </div>
+        <div class="card">
+            <h4>无人驾驶</h4>
+            <p>取消驾驶员，降低人力成本，依赖高冗余飞控与远程监控</p>
+        </div>
+        <div class="card">
+            <h4>纯电动力</h4>
+            <p>零排放、低噪音，符合城市环保要求，但受电池能量密度限制</p>
+        </div>
+        <div class="card">
+            <h4>适航先行</h4>
+            <p>率先完成全球最严适航取证，形成法规壁垒与先发优势</p>
+        </div>
+    </div>
+</section>
+
+<section id="tech">
+    <h2>二、技术可行性分析</h2>
+
+    <h3>2.1 动力系统</h3>
+    <p>EH216-S 采用<strong>分布式电推进（DEP）</strong>架构，16 组电机独立驱动，单个或多个电机失效时可通过剩余动力重新分配维持可控飞行。同轴反转双桨设计抵消了反扭矩，无需尾桨，提高了气动效率并降低了结构复杂度。</p>
+
+    <h3>2.2 飞控与智能化</h3>
+    <p>飞控系统采用<strong>三重冗余设计</strong>，包含惯性导航、GNSS、气压高度计、磁力计等多源传感器融合。飞行全过程由机载计算机自主完成，地面指挥调度中心可实时监控并接管。已实现超 <strong>8 万架次安全飞行、零事故</strong>记录。</p>
+
+    <h3>2.3 能源系统</h3>
+    <p>采用高能量密度锂电池组，支持<strong>快速换电</strong>（约 5-10 分钟），缓解充电等待问题。但当前续航约 25 分钟、航程 30 km，主要限制在<strong>城市内短途</strong>与观光场景，尚无法满足城际通勤需求。</p>
+
+    <div class="highlight">
+        <strong>技术可行性结论：</strong>EH216-S 在短途载人飞行场景下技术成熟度较高，已完成适航验证并投入商业运营；但受限于电池能量密度，长航时、长航距仍是行业共性瓶颈。
+    </div>
+</section>
+
+<section id="scene">
+    <h2>三、应用场景分析</h2>
+
+    <h3>3.1 当前已落地场景</h3>
+    <ul>
+        <li><strong>低空文旅观光</strong>：已在合肥、广州等地开展商业载人观光飞行，乘客可在 200-500 米高度体验城市景观</li>
+        <li><strong>城市空中交通（UAM）示范</strong>：在特定航线进行点对点短途接驳测试</li>
+        <li><strong>应急救援</strong>：可用于物资投送、伤员转运、火情侦察等</li>
+        <li><strong>空中巡查</strong>：交通监控、电力巡线、环境监测</li>
+    </ul>
+
+    <h3>3.2 未来扩展场景</h3>
+    <ul>
+        <li><strong>空中出租车</strong>：随着航程提升与空域管理完善，可承担城市内快速通勤</li>
+        <li><strong>医疗急救</strong>：城市内器官/血液运输、急症转运</li>
+        <li><strong>跨境与海岛接驳</strong>：短距离跨海、跨城运输</li>
+    </ul>
+</section>
+
+<section id="market">
+    <h2>四、市场可行性分析</h2>
+
+    <h3>4.1 市场规模</h3>
+    <p>据摩根士丹利等机构预测，全球城市空中交通（UAM）市场规模到 <strong>2040 年将达 1.5 万亿美元</strong>。中国低空经济已被写入政府工作报告，多地出台支持政策，2025 年低空经济规模已突破 1.5 万亿元人民币。</p>
+
+    <h3>4.2 竞争格局</h3>
+    <table>
+        <tr><th>企业</th><th>产品</th><th>构型</th><th>进展</th></tr>
+        <tr><td>亿航智能</td><td>EH216-S</td><td>多旋翼无人驾驶</td><td>四证齐全，已商业运营</td></tr>
+        <tr><td>Joby Aviation</td><td>Joby S4</td><td>倾转旋翼</td><td>美国 FAA 适航推进中</td></tr>
+        <tr><td>Archer Aviation</td><td>Midnight</td><td>倾转旋翼</td><td>FAA 认证阶段</td></tr>
+        <tr><td>小鹏汇天</td><td>陆地航母 X3-F</td><td>分体式多旋翼</td><td>已交付海外客户</td></tr>
+        <tr><td>Volocopter</td><td>VoloCity</td><td>多旋翼</td><td>EASA 适航推进中</td></tr>
+    </table>
+
+    <h3>4.3 商业模式</h3>
+    <ul>
+        <li><strong>整机销售</strong>：面向文旅景区、地方政府、运营商</li>
+        <li><strong>运营服务分成</strong>：与地方合作开展观光飞行，按票分成</li>
+        <li><strong>生态平台</strong>：提供指挥调度系统、运维服务、操作员培训</li>
+    </ul>
+
+    <div class="highlight">
+        <strong>市场可行性结论：</strong>亿航凭借四证齐全的法规先发优势，在低空文旅场景已实现商业闭环；但大众化空中出租车仍需等待空域开放、成本下降与公众接受度提升。
+    </div>
+</section>
+
+<section id="risk">
+    <h2>五、风险与挑战</h2>
+    <ul>
+        <li><strong>电池技术瓶颈</strong>：能量密度限制航程与载荷，低温性能衰减明显</li>
+        <li><strong>空域管理</strong>：城市低空空域尚未全面开放，航线审批流程复杂</li>
+        <li><strong>公众接受度</strong>：无人驾驶载人飞行的心理接受度仍需培育</li>
+        <li><strong>成本问题</strong>：当前单次观光票价较高，尚未达到大众消费水平</li>
+        <li><strong>国际竞争加剧</strong>：Joby、Archer 等企业在长航程倾转旋翼路线上投入巨大</li>
+        <li><strong>基础设施</strong>：起降场（Vertiport）、充电/换电网络建设滞后</li>
+    </ul>
+</section>
+
+<section id="conclusion">
+    <h2>六、结论</h2>
+    <p>EH216-S 是当前全球<strong>商业化程度最高的载人 eVTOL</strong>，其技术路线选择（多旋翼 + 无人驾驶 + 纯电）在短途场景下具备充分可行性。亿航通过率先完成适航取证，建立了显著的法规与品牌壁垒。</p>
+    <p>短期看，低空文旅观光是最现实的市场切入点；中期看，随着电池技术进步与空域改革推进，城市空中交通有望逐步落地；长期看，亿航需要在航程、成本与规模化运营上持续突破，才能在全球 eVTOL 竞争中保持领先。</p>
+    <div style="margin-top:15px;">
+        <span class="tag">#eVTOL</span>
+        <span class="tag">#低空经济</span>
+        <span class="tag">#无人驾驶</span>
+        <span class="tag">#适航认证</span>
+        <span class="tag">#城市空中交通</span>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>飞行汽车技术基础 · 课程作业 1 · 2026</p>
+    <p>数据来源：亿航智能官网、CAAC 公开信息、公开行业研究报告</p>
+</footer>
+
+</body>
+</html>
